@@ -5,15 +5,14 @@
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <ChoiceBox layoutX="195.0" layoutY="128.0" prefHeight="25.0" prefWidth="252.0" />
-      <Button layoutX="558.0" layoutY="128.0" mnemonicParsing="false" text="OK">
+      <ChoiceBox fx:id="typeBox" layoutX="195.0" layoutY="128.0" prefHeight="25.0" prefWidth="252.0" />
+      <Button fx:id="okBtn" layoutX="558.0" layoutY="128.0" mnemonicParsing="false" text="OK">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
       </Button>
-      <Button layoutX="574.0" layoutY="441.0" mnemonicParsing="false" text="Logout" />
+      <Button fx:id="logoutBtn" layoutX="574.0" layoutY="441.0" mnemonicParsing="false" text="Logout" />
    </children>
 </AnchorPane>

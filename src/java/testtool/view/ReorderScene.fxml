@@ -4,14 +4,13 @@
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <ListView layoutX="163.0" layoutY="97.0" prefHeight="200.0" prefWidth="200.0" />
-      <ListView layoutX="438.0" layoutY="97.0" prefHeight="200.0" prefWidth="200.0" />
-      <Button layoutX="389.0" layoutY="155.0" mnemonicParsing="false" text="&gt;" />
-      <Button layoutX="389.0" layoutY="197.0" mnemonicParsing="false" text="&lt;" />
-      <Button layoutX="613.0" layoutY="376.0" mnemonicParsing="false" text="&gt;" />
-      <Button layoutX="163.0" layoutY="376.0" mnemonicParsing="false" text="&lt;" />
+      <ListView fx:id="unOrderedLBox" layoutX="163.0" layoutY="97.0" prefHeight="200.0" prefWidth="200.0" />
+      <ListView fx:id="orderedLBox" layoutX="438.0" layoutY="97.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button fx:id="sendToOrderedBtn" layoutX="389.0" layoutY="155.0" mnemonicParsing="false" text="&gt;" />
+      <Button fx:id="sendToUnOrderedBtn" layoutX="389.0" layoutY="197.0" mnemonicParsing="false" text="&lt;" />
+      <Button fx:id="continueBtn" layoutX="613.0" layoutY="376.0" mnemonicParsing="false" text="&gt;" />
+      <Button fx:id="backBtn" layoutX="163.0" layoutY="376.0" mnemonicParsing="false" text="&lt;" />
    </children>
 </AnchorPane>
