@@ -72,11 +72,11 @@ public class CreateTestController implements Initializable {
         testList = FXCollections.observableArrayList(
                 new Test(1, "Test 1", 5, 6, 7, 8, 9, 0),
                 new Test(2, "Test 2", 3, 3, 5, 7, 8, 1));
-        
+
         questionList = FXCollections.observableArrayList(
                 new Question(1, "Test", 3),
                 new Question(2, "Teeeest", 4));
-        
+
         answerList = FXCollections.observableArrayList(
                 new Answer(1, "Answer"),
                 new Answer(2, "Answeeer"));
@@ -89,16 +89,14 @@ public class CreateTestController implements Initializable {
         testGrade.setCellValueFactory(new PropertyValueFactory<Test, Integer>("testGrade"));
         testTimer.setCellValueFactory(new PropertyValueFactory<Test, Integer>("testTimer"));
         testShowAnswer.setCellValueFactory(new PropertyValueFactory<Test, Integer>("testShowAnswer"));
-        
+
         questionId.setCellValueFactory(new PropertyValueFactory<Question, Integer>("questionId"));
         questionTitle.setCellValueFactory(new PropertyValueFactory<Question, String>("questionTitle"));
         questionScore.setCellValueFactory(new PropertyValueFactory<Question, Integer>("questionScore"));
-        
+
         answerId.setCellValueFactory(new PropertyValueFactory<Answer, Integer>("answerId"));
-        answerAnswer.setCellValueFactory(new PropertyValueFactory<Answer, String>("answerAnswer));
-
-
-
+        answerAnswer.setCellValueFactory(new PropertyValueFactory<Answer, String>("answerAnswer"));
+        
         testView.setItems(testList);
         questionView.setItems(questionList);
         answerView.setItems(answerList);
@@ -111,14 +109,14 @@ public class CreateTestController implements Initializable {
             questionList.add(q2);
 
         });
-                                                                                  
+
         btnSaveAnswer.setOnAction(ev -> {
-            
+
             Answer a1 = new Answer(1, "Answer");
             Answer a2 = new Answer(2, "Answeeer");
             answerList.add(a1);
             answerList.add(a2);
-            
+
         });
 
         btnSaveTest.setOnAction(ev -> {
