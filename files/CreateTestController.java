@@ -103,25 +103,44 @@ public class CreateTestController implements Initializable {
 
         btnSaveQuestion.setOnAction(ev -> {
 
-            Question q1 = new Question(1, "Question", 3);
+            Question q1 = new Question(
+                    Integer.parseInt(questionId.getText()),
+                    questionTitle.getText(),
+                    Integer.parseInt(questionScore.getText()));
+            
             Question q2 = new Question(2, "Questionnnn", 4);
             questionList.add(q1);
             questionList.add(q2);
+            
+            
+            
 
         });
 
         btnSaveAnswer.setOnAction(ev -> {
 
-            Answer a1 = new Answer(1, "Answer");
+            Answer a1 = new Answer(
+                    Integer.parseInt(answerId.getText()),
+                    answerAnswer.getText());
+            
             Answer a2 = new Answer(2, "Answeeer");
             answerList.add(a1);
-            answerList.add(a2);
+            answerList.add(a2);  
 
         });
 
         btnSaveTest.setOnAction(ev -> {
 
-            Test t1 = new Test(1, "Hej", 5, 5, 5, 5, 5, 5);
+            Test t1 = new Test(
+                    Integer.parseInt(testId.getText()),
+                    testTitle.getText(),
+                    Integer.parseInt(testOpenDate.getText()),
+                    Integer.parseInt(testCloseDate.getText()),
+                    Integer.parseInt(testScore.getText()),
+                    Integer.parseInt(testGrade.getText()),
+                    Integer.parseInt(testTimer.getText()),
+                    Integer.parseInt(testShowAnswer.getText()));
+            
             Test t2 = new Test(2, "Hee", 6, 4, 3, 2, 1, 0);
             testList.add(t1);
             testList.add(t2);
